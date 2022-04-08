@@ -2,7 +2,6 @@
 
 > Rain Boww
 
-[![NPM](https://img.shields.io/npm/v/rain-bow.svg)](https://www.npmjs.com/package/rain-bow) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
@@ -13,18 +12,31 @@ npm install --save rain-bow
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'rain-bow'
+import { Button } from 'rain-bow'
 import 'rain-bow/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return (
+    <div className='App'>
+      <Button text='Null' />
+      <Button type='primary' text='primary' />
+      <Button type='default' text='default' />
+      <Button type='dashed' text='dashed' />
+      <Button type='text' text='text' />
+      <Button type='link' text='link' />
+    </div>
+  )
 }
+
+export default App
 ```
+
+![Örenekler](./ex.png)
+
 
 ## License
 
 MIT © [mucahitkok](https://github.com/mucahitkok)
+# rain-bow
