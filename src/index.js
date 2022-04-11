@@ -20,7 +20,7 @@ export const Button = (props) => {
         ? styles.text
         : props.type == 'link'
         ? styles.link
-        : console.log('Type için böyle bir değer yok.')
+        : console.log('Type değeri geçersiz yada tanımlanmadı.')
       }`}
     >
       {props.text}
